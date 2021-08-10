@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 30px;
+    font-family: 'Montserat' , sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    width: 210vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+h1{
+    color: white;
+}
+
+a,i{
+    align-items: center;
+    justify-content: space-evenly;
+    width: 105px;
+    color: white;
+}
+
+h4{
+    padding-left: 165px;
+    color: white;
+}
+
+.fa-linkedin,.fa-github,.fa-instagram{
+    padding-left: 155px;
+}
+
+
+#main{
+    background-image:url(./img/background.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#main::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#about .section-title{
+    color:#ffffff;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    margin: 25px;
+    align-items: center;
+}
+
+#about .about-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+}
+
+#about .about-item{
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: cover;
+  margin: 10px 5%;
+  background-color: gray;
+}
+
+#proj .section-title{
+    color:#ffffff;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#proj .proj-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 5%;
+    background-color: gray;
+  }
+
+#lang .section-title{
+    color:#ffffff;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+  #lang .lang-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 5%;
+    background-color: gray;
+  }
